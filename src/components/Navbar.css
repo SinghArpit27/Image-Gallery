@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@100;300;400;700;900&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --heading: #11142d;
+    --navbar: #475BE8;
+    --bg-color: #fcfcfc;
+    --hoverColor: #1e36ed;
+    --text-content: #f0f0f0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #475BE8;
+    color: #f0f0f0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+.home,
+.category,
+.about,
+.contact{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.active{
+    color: #061377;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 850px){
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #475BE8;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    .home,
+    .category,
+    .about,
+    .contact{
+        color: white;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: #475BE8;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+
+    }
+}

@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* border: 1px solid black; */
+    padding: 5rem 5rem 0;
+    height: 100vh;
+    display: flex;
+    background-color: #111;
+    color: #fcfcfc;
+}
+
+.left, 
+.right{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 100%;
+}
+
+.title{
+    font-size: 2.9rem;
+    font-weight: 500;
+    margin: 3rem 0 0 3rem;
+}
+
+.sub-title{
+    font-size: 1.5rem;
+    margin: 3.5rem 0 0 3rem;
+}
+
+.author-details{
+    font-size: 1rem;
+    margin: 1.2rem 0 0 3rem;
+}
+
+.contact-des{
+    font-size: 1rem;
+    margin: 1.2rem 2rem 0 3rem;
+}
+
+.contact-form{
+    margin: 9.5rem 0 0 0;
+}
+
+.contact-form .inp-field{
+    height: 2.5rem;
+    width: 15rem;
+    border: 2px solid #fcfcfc;
+    border-radius: 2px;
+    padding-left: .5rem;
+    font-size: 1rem;
+    background-color: #111;
+    color: #fcfcfc;
+}
+
+#name-inp-field{
+    margin-right: 2rem;
+}
+
+#subject-inp-field{
+    margin-top: 1.5rem;
+    width: 32rem;
+}
+
+#message-inp-field{
+    margin-top: 1.5rem;
+    height: 7.5rem;
+    width: 32rem;
+}
+
+.btn{
+    font-size: 1.3rem;
+    padding: .2rem 1rem;
+    border: 2px solid #475BE8;
+    background-color: #475BE8;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1190px){
+
+    .container{
+        padding: 5rem 2rem 0;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+    
+    .sub-title{
+        font-size: 1.3rem;
+    }
+    
+    .author-details{
+        font-size: .9rem;
+    }
+    
+    .contact-des{
+        font-size: .9rem;
+    }
+
+
+    .contact-form{
+        margin: 8rem 0 0 0;
+    }
+
+    .contact-form .inp-field{
+        height: 2.5rem;
+        width: 100%;
+    }
+
+    #name-inp-field{
+        margin-right: 3%;
+        width: 45%;
+    }
+    #email-inp-field{
+        width: 45%;
+    }
+
+    
+    #subject-inp-field{
+        margin-top: 1.5rem;
+        width: 93%;
+    }
+    #message-inp-field{
+        margin-top: 1.5rem;
+        height: 7.5rem;
+        width: 93%;
+    }
+}
+
+@media (max-width: 850px){
+    .container{
+        flex-flow: column;
+    }
+    .left, 
+    .right{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid red; */
+    }
+    .title{
+        margin: 2rem 0 0 0;
+    }
+    .sub-title{
+        margin: 2rem 0 0 0;
+    }
+    .author-details{
+        margin: 1rem 0 0 0;
+    }
+    .contact-des{
+        margin: 1rem 2rem 0 0;
+    }
+
+    .contact-form{
+        margin: 2rem 0 0 0;
+    }
+}
+
+@media (max-width: 540px){
+    .title{
+        font-size: 2.2rem;
+        margin: 1.5rem 0 0 0;
+    }
+    
+    .sub-title{
+        font-size: 1.2rem;
+        margin: 1.4rem 0 0 0;
+    }
+    
+    .author-details{
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
+    }
+    
+    .contact-des{
+        font-size: 1rem;
+        margin: 1rem 2rem 0 0;
+    }
+    .contact-form{
+        margin: .5rem 0 0 0;
+    }
+}
+
+@media (max-width: 375px){
+    .title{
+        font-size: 2rem;
+        margin: 1.2rem 0 0 0;
+    }
+    
+    .sub-title{
+        font-size: 1.2rem;
+        margin: 1.1rem 0 0 0;
+    }
+    
+    .author-details{
+        font-size: .9rem;
+        margin: .8rem 0 0 0;
+    }
+    
+    .contact-des{
+        font-size: .9rem;
+        margin: .8rem 2rem 0 0;
+    }
+    .contact-form{
+        margin: .5rem 0 0 0;
+    }
+    .contact-form .inp-field{
+        height: 2rem;
+        font-size: .9rem;
+        border: 1px solid #fcfcfc;
+    }
+}
